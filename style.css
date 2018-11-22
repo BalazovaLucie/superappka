@@ -1,0 +1,125 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+
+a {
+    display: inline-block;
+    margin-right: 50px;
+    text-decoration: none;
+
+}
+
+
+
+a:hover {font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+  .stred 
+{
+    position: relative;
+    background-image: url("images/pozadi.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding: 60px 425px 60px 40px;
+    background-size: cover;
+    color: white;
+  }
+
+.telefon
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.NADPIS {
+font-size: 40px;
+font-style: normal;}
+
+.Slogan {
+    font-size: 35px;
+}
+
+.button { 
+ font-size: 20px; 
+ text-decoration: none;
+ border: #cccccc solid;
+ padding: 20px;
+ border-radius: 7%;
+ margin-right: 23px;
+
+}
+
+
+.AKCE :hover{
+    background: #48418e;
+    color: #cccccc;
+    
+text-transform: none;}
+
+
+    h2 {
+        color: #48418e;
+    }
+
+  .ikony{  
+      display: flex;
+      justify-content: space-around;
+      flex-direction:colum;
+                
+        }
+
+
+.slogany
+{display: flex;
+ justify-content: space-around;
+ text-align: center;   
+
+
+}
+
+
+.paticka
+{
+text-align: center;
+background-color: #25133d;
+color: #cccccc;
+
+}
+.clearfix ::after {content:"";display: block;clear: both}
